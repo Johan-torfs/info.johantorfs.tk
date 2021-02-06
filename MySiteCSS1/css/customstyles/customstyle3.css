@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung');
+
+html {
+    --main-col: #a0efd3;
+    --body-col: white;
+    --accent-col: #a0efd3;
+    --accent-col-transparent: rgba(255, 255, 192, 0.9);
+    --text-col: black;
+    --title-col: red;
+    --title-h1-col: var(--title-col);
+    --link-col: blue;
+    --link-active-col: blue;
+    --link-visited-col: blue;
+    --current-col: yellow;
+    --schadow-col: rgba(0, 0, 255, 0.5);
+}
+
+body {
+    font-family: 'Yeon Sung', sans-serif;
+    background-image: url(../../../images/colored-hands.jpg);
+}
+
+header,
+footer {
+    background-image: linear-gradient(90deg,
+        rgb(255, 0, 0) 0%,
+        rgb(255, 125, 0) 14.28%,
+        rgb(255, 125, 0) 28.57%,
+        rgb(255, 255, 0) 42.85%,
+        rgb(0, 255, 0) 57.14%,
+        rgb(0, 0, 255) 71.42%,
+        rgb(255, 125, 255) 85.71%,
+        rgb(255, 0, 255) 100%
+    )
+}
+
+header {
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.card {
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.headline > nav > ul > li {
+    background-color: rgba(255, 50, 50, 0.5);
+}
+
+.headline > nav > ul > li:nth-child(2n) {
+    background-color: rgba(255, 50, 255, 0.5);
+}
+
+.headline > nav > ul > li:nth-child(3n) {
+    background-color: rgba(50, 255, 50, 0.5);
+}
+
+.card-container > .card:first-child {
+    background-color: rgb(200, 230, 50);
+}
+
+.card-container > .card:nth-child(2) {
+    background-color: rgb(50, 150, 100);
+    position: relative;
+    bottom: 1rem;
+}
+
+.card-container > .card:nth-child(3) {
+    background-color: rgb(50, 255, 255);
+    position: relative;
+    top: 1rem;
+}
+
+.card-container > .card:nth-child(6) {
+    background-color: rgb(50, 255, 50);
+    position: relative;
+    top: 1rem;
+}
+
+.card-container > .card:nth-child(5) {
+    background-color: rgb(205, 150, 100);
+}
+
+.card-container > .card:nth-child(4) {
+    background-color: rgb(150, 150, 255);
+    position: relative;
+    bottom: 1rem;
+}
+
+.show3 {
+    display: inline-block;
+}
+
+.show3 img {
+    border: none;
+    clip-path: circle(35% at 50% 50%);
+}
+
+.show3 img:hover {
+    clip-path: none;
+}

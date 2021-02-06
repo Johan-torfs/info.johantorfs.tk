@@ -1,0 +1,72 @@
+body,
+header,
+footer {
+    color: var(--text-col);
+    background-color: var(--body-col);
+}
+
+main {
+    background-color: var(--main-col);
+}
+
+select {
+    background-color: var(--accent-col);
+}
+
+h2,
+h3 {
+    color: var(--title-col);
+}
+
+h1,
+footer h2 {
+    color: var(--title-h1-col);
+}
+
+a {
+    color: var(--link-col);
+}
+
+a:active {
+    color: var(--link-active-col);
+}
+
+a:visited {
+    color: var(--link-visited-col);
+}
+
+.hamburger {
+    background-color: var(--accent-col-transparent);
+}
+
+.bar1,
+.bar2,
+.bar3 {
+   background-color: var(--text-col);
+}
+
+.headline {
+    background-color: var(--accent-col-transparent);
+}
+
+.headline li {
+    border-color: var(--text-col);
+}
+
+.headline a {
+    color: var(--text-col);
+}
+
+.headline a:hover,
+.headline a:active {
+    background-color: var(--accent-col);
+}
+
+#current {
+    background-color: var(--current-col);
+    color: var(--text-col);
+}
+
+.card {
+    background-color: var(--accent-col);
+}

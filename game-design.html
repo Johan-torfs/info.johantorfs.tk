@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Johan Torfs | Game Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/side-pages.css">
+</head>
+
+<body>
+    <div class="hamburger" onclick="toggle(this); toggleHeadline();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <div id="headline" class="headline">
+        <nav>
+            <ul class="d-flex flex-nowrap flex-column flex-md-row">
+                <li><a href="index.html">Home</a></li>
+                <!--
+                <li><a href="web-design.html">Web Design</a></li>
+                -->
+                <li><a href="2d-graphics-design.html">2D Graphics Design</a></li>
+                <li><a href="3d-graphics-design.html">3D Graphics Design</a></li>
+                <li><a id="current" href="game-design.html">Game Design</a></li>
+                <li><a href="MySiteCSS1/colorscheme.html">Colorscheme</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <header>
+            <h1>Game Design</h1>
+
+            <svg id="logo" class="d-none" width="100px" height="100px">
+                <ellipse cx="50" cy="50" rx="28" ry="26" style="fill: orange;" />
+                <ellipse cx="50" cy="50" rx="12" ry="10" style="fill: white;" />
+                <polygon points="10 0, 20 0, 30 10, 30 20, 20 30, 10 30, 0 20, 0 10" style="fill: orange; transform: translate(10px, 15px);" />
+                <polygon points="10 0, 20 0, 30 10, 30 20, 20 30, 10 30, 0 20, 0 10" style="fill: orange; transform: translate(60px, 15px);" />
+                <polygon points="10 0, 20 0, 30 10, 30 20, 20 30, 10 30, 0 20, 0 10" style="fill: orange; transform: translate(10px, 55px);" />
+                <polygon points="10 0, 20 0, 30 10, 30 20, 20 30, 10 30, 0 20, 0 10" style="fill: orange; transform: translate(60px, 55px);" />
+            </svg>
+        </header>
+
+        <main class="container p-0">
+            <article>
+                <h2>Introduction</h2>
+
+                <p>
+                    It's been my dream to create my own game for a long time. I started of trying to make games in Java or any other programming language I came across, but eventually I learned how to use Unity. After following a series of tutorials and doing a lot of experimentation, I did suceed in making something at least playable. The result can be seen down below.
+                </p>
+                
+                <p>
+                    After this first game, I did continue to make a new one. In the future you might be able to find this and future games on <a href="https://simmer.io/@johantorfs">simmer.io/@johantorfs</a>.<br>
+                    In the near future I hope to start working on a new game. Together with a few friends we hope to have something presentable in a few years, but all of that is still far in the future. For now, maybe you can enjoy this small game down below.
+                </p>
+            </article>
+
+            <article>
+                <h2>Examples</h2>
+
+                <div class="d-flex align-items-center justify-content-center">
+                    <iframe src="https://i.simmer.io/@johantorfs/ducky-the-rebelion" style="width:960px;height:600px;border:0"></iframe>
+                </div>
+                
+            </article>
+        </main>
+
+        <footer>
+            <section>
+                <h2 class="d-none d-md-block mb-0">Contact Info</h2>
+                <p>
+                    <i class="fas fa-envelope fa-1x"></i> Contact me:
+                    <a href="mailto:r0831282@student.thomasmore.be">r0831282&commat;student.thomasmore.be</a>
+                </p>
+
+                <div class="social-info">
+                    <ul class="d-flex flex-wrap align-items-center justify-content-center">
+                        <li><a href="https://www.facebook.com/johan.torfs.7" target="_blank"><i class="fab fa-facebook-square fa-2x"></i> <span class="d-none d-md-inline icon-text">Facebook</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/johan-torfs-375881184/" target="_blank"><i class="fab fa-linkedin fa-2x"></i> <span class="d-none d-md-inline icon-text">LinkedIn</span></a></li>
+                        <li><a href="https://twitter.com/torfs_johan" target="_blank"><i class="fab fa-twitter fa-2x"></i> <span class="d-none d-md-inline icon-text">Twitter</span></a></li>
+                        <li><a href="https://www.pexels.com/@johan-torfs-15364955" target="_blank"><i><img class="pexels" src="images/official-pexels-icon.jpg" alt="Pexels icon"></i> <span class="d-none d-md-inline-block icon-text">Pexels</span></a></li>
+                        <li><a href="https://simmer.io/@johantorfs" target="_blank"><i><img class="pexels" src="images/simmer-icon.jpg" alt="Simmer icon"></i> <span class="d-none d-md-inline-block icon-text">Simmer</span></a></li>
+                    </ul>
+                </div>
+
+                <p>
+                    &copy; Johan Torfs - 2021
+                </p>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+        function toggleHeadline() {
+            document.getElementById('headline').classList.toggle("change");
+        }
+    </script>
+    
+    <script>
+        function toggle(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
+</body>
+
+</html>

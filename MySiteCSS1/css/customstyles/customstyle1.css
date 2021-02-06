@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda');
+
+html {
+    --main-col: white;
+    --body-col: lightblue;
+    --accent-col: #d0e0ff;
+    --accent-col-transparent: rgba(224, 240, 255, 0.9);
+    --text-col: black;
+    --title-col: darkblue;
+    --title-h1-col: var(--title-col);
+    --link-col: blue;
+    --link-active-col: blue;
+    --link-visited-col: blue;
+    --current-col: #6070ff;
+    --schadow-col: rgba(0, 0, 255, 0.5);
+}
+
+main {
+    margin: 0.5rem auto;
+}
+
+main,
+.card {
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px var(--schadow-col);
+}
+
+body {
+    font-family: 'Bodoni Moda', sans-serif;
+}
+
+.card {
+    border: solid black 2px;
+}
+
+.show1 {
+    display: flex;
+}
+
+figure img {
+    filter: blur(5px);
+}
+
+figure:hover img,
+figure:active img {
+    filter: none;
+}
+
+figure {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    display: none;
+    background-image: linear-gradient(rgba(150, 150, 150, 0.7), transparent);
+    text-align: center;
+    width: 120%;
+}
+
+figure:hover .overlay {
+    display: block;
+}
+

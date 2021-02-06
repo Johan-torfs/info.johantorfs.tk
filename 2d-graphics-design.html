@@ -1,0 +1,145 @@
+<!--
+    Add intro text
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Johan Torfs | 2D Graphics Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/side-pages.css">
+</head>
+
+<body>
+    <div class="hamburger" onclick="toggle(this); toggleHeadline();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <div id="headline" class="headline">
+        <nav>
+           <ul class="d-flex flex-nowrap flex-column flex-md-row">
+                <li><a href="index.html">Home</a></li>
+                <!--
+                <li><a href="web-design.html">Web Design</a></li>
+                -->
+                <li><a id="current" href="#">2D Graphics Design</a></li>
+                <li><a href="3d-graphics-design.html">3D Graphics Design</a></li>
+                <li><a href="game-design.html">Game Design</a></li>
+                <li><a href="MySiteCSS1/colorscheme.html">Colorscheme</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <header>
+            <h1>2D Graphics Design</h1>
+
+            <svg id="logo" class="d-none" width="100px" height="100px">
+                <ellipse cx="50" cy="50" rx="28" ry="26" style="fill: orange;" />
+                <ellipse cx="50" cy="50" rx="12" ry="10" style="fill: white;" />
+                <polygon points="10 0, 20 0, 30 10, 30 20, 20 30, 10 30, 0 20, 0 10" style="fill: orange; transform: translate(10px, 15px);" />
+                <polygon points="10 0, 20 0, 30 10, 30 20, 20 30, 10 30, 0 20, 0 10" style="fill: orange; transform: translate(60px, 15px);" />
+                <polygon points="10 0, 20 0, 30 10, 30 20, 20 30, 10 30, 0 20, 0 10" style="fill: orange; transform: translate(10px, 55px);" />
+                <polygon points="10 0, 20 0, 30 10, 30 20, 20 30, 10 30, 0 20, 0 10" style="fill: orange; transform: translate(60px, 55px);" />
+            </svg>
+        </header>
+
+        <main class="container p-0">
+            <article>
+                <h2>Introduction</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nesciunt distinctio nobis eveniet ipsa consequuntur alias delectus sint non accusantium. Mollitia quod laborum ab quia voluptatibus, id corporis. Officiis eius id, architecto aspernatur porro laborum non fuga atque vitae, voluptatibus facilis, at necessitatibus a quis repellendus. Praesentium omnis eaque iste.
+                </p>
+            </article>
+
+            <article  class="examples">
+                <h2>Examples</h2>
+                
+                <ul class="d-flex flex-wrap">
+                    <li>
+                        <button id="dragon" class="btn" onclick="hide('rainbow'); show(this.id);">Cartoon Cookie Dragon</button>
+                    </li>
+                    <li>
+                        <button id="rainbow" class="btn" onclick="hide('dragon'); show(this.id);">Cartoon Rainbow</button>
+                    </li>
+                </ul>
+                
+                <figure id="dragon-examples" class="example-2d">
+                    <img src="images/dragon-hd.jpg" alt="Cute cartoon dragon sleeping guarding chocolate-chip-cookies">
+                </figure>
+                       
+                <figure id="rainbow-examples" class="example-2d">
+                    <img src="images/rainbow-hd.jpg" alt="Cartoon rainbow">
+                </figure>
+            </article>
+        </main>
+
+        <footer>
+            <section>
+                <h2 class="d-none d-md-block mb-0">Contact Info</h2>
+                <p>
+                    <i class="fas fa-envelope fa-1x"></i> Contact me:
+                    <a href="mailto:r0831282@student.thomasmore.be">r0831282&commat;student.thomasmore.be</a>
+                </p>
+
+                <div class="social-info">
+                    <ul class="d-flex flex-wrap align-items-center justify-content-center">
+                        <li><a href="https://www.facebook.com/johan.torfs.7" target="_blank"><i class="fab fa-facebook-square fa-2x"></i> <span class="d-none d-md-inline icon-text">Facebook</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/johan-torfs-375881184/" target="_blank"><i class="fab fa-linkedin fa-2x"></i> <span class="d-none d-md-inline icon-text">LinkedIn</span></a></li>
+                        <li><a href="https://twitter.com/torfs_johan" target="_blank"><i class="fab fa-twitter fa-2x"></i> <span class="d-none d-md-inline icon-text">Twitter</span></a></li>
+                        <li><a href="https://www.pexels.com/@johan-torfs-15364955" target="_blank"><i><img class="pexels" src="images/official-pexels-icon.jpg" alt="Pexels icon"></i> <span class="d-none d-md-inline-block icon-text">Pexels</span></a></li>
+                        <li><a href="https://simmer.io/@johantorfs" target="_blank"><i><img class="pexels" src="images/simmer-icon.jpg" alt="Simmer icon"></i> <span class="d-none d-md-inline-block icon-text">Simmer</span></a></li>
+                    </ul>
+                </div>
+
+                <p>
+                    &copy; Johan Torfs - 2021
+                </p>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+        function toggleHeadline() {
+            document.getElementById('headline').classList.toggle("change");
+        }
+    </script>
+    
+    <script>
+        function toggle(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    
+    <script>
+        var open = 'none'
+
+        function show(id) {
+            if (open == id) {
+                hide(id);
+                open = 'none';
+            } else {
+                document.getElementById(id.concat('-examples')).style.height = 'auto';
+                document.getElementById(id.concat('-examples')).style.transform = 'rotateX(0deg)';
+                document.getElementById(id).style.backgroundColor = 'azure';
+                open = id;
+            }
+        }
+
+        function hide(id) {
+            document.getElementById(id.concat('-examples')).style.height = '0px';
+            document.getElementById(id.concat('-examples')).style.transform = 'rotateX(90deg)';
+            document.getElementById(id).style.backgroundColor = '#ddd';
+        }
+
+    </script>
+</body>
+
+</html>

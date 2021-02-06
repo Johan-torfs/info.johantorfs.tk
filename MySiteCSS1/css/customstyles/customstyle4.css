@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy');
+
+html {
+    --main-col: white;
+    --body-col: forestgreen;
+    --accent-col: #c0ffc0;
+    --accent-col-transparent: rgba(192, 255, 192, 0.9);
+    --text-col: black;
+    --title-col: #050;
+    --title-h1-col: #030;
+    --link-col: blue;
+    --link-active-col: blue;
+    --link-visited-col: blue;
+    --current-col: darkgreen;
+    --schadow-col: rgba(160, 255, 160, 0.5);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px var(--schadow-col);
+}
+
+body {
+    font-family: 'Satisfy', sans-serif;
+    font-size: 20px;
+    background-image: url(../../../images/bloemen-back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    padding-bottom: 2rem;
+}
+
+footer {
+    font-size: 16px;
+}
+
+.card {
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.show1 {
+    display: flex;
+}
+
+figure {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    display: none;
+    background-image: linear-gradient(rgba(0, 50, 0, 0.7), transparent);
+    text-align: center;
+    width: 120%;
+}
+
+figure:hover .overlay {
+    display: block;
+}

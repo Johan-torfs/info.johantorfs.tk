@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+html {
+    --main-col: white;
+    --body-col: white;
+    --accent-col: #ffffc0;
+    --accent-col-transparent: rgba(255, 255, 192, 0.9);
+    --text-col: black;
+    --title-col: red;
+    --title-h1-col: var(--title-col);
+    --link-col: blue;
+    --link-active-col: blue;
+    --link-visited-col: blue;
+    --current-col: yellow;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.show2 {
+    display: inline-block;
+}
+
+.space {
+    display: block;
+    max-width: 50%;
+    float: left;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.clearfix {
+    overflow: auto;
+    margin-bottom: 2rem;
+}
