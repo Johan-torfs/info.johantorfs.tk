@@ -9,7 +9,13 @@
     <meta charset="UTF-8">
     <title>Johan Torfs | 2D Graphics Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/side-pages.css">
 </head>
@@ -23,7 +29,7 @@
 
     <div id="headline" class="headline">
         <nav>
-           <ul class="d-flex flex-nowrap flex-column flex-md-row">
+            <ul class="d-flex flex-nowrap flex-column flex-md-row">
                 <li><a href="index.html">Home</a></li>
                 <!--
                 <li><a href="web-design.html">Web Design</a></li>
@@ -59,9 +65,9 @@
                 </p>
             </article>
 
-            <article  class="examples">
+            <article class="examples">
                 <h2>Examples</h2>
-                
+
                 <ul class="d-flex flex-wrap">
                     <li>
                         <button id="dragon" class="btn" onclick="hide('rainbow'); show(this.id);">Cartoon Cookie Dragon</button>
@@ -70,11 +76,11 @@
                         <button id="rainbow" class="btn" onclick="hide('dragon'); show(this.id);">Cartoon Rainbow</button>
                     </li>
                 </ul>
-                
+
                 <figure id="dragon-examples" class="example-2d">
                     <img src="images/dragon-hd.jpg" alt="Cute cartoon dragon sleeping guarding chocolate-chip-cookies">
                 </figure>
-                       
+
                 <figure id="rainbow-examples" class="example-2d">
                     <img src="images/rainbow-hd.jpg" alt="Cartoon rainbow">
                 </figure>
@@ -110,14 +116,16 @@
         function toggleHeadline() {
             document.getElementById('headline').classList.toggle("change");
         }
+
     </script>
-    
+
     <script>
         function toggle(x) {
             x.classList.toggle("change");
         }
+
     </script>
-    
+
     <script>
         var open = 'none'
 
