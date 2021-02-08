@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.5s;
+    background-color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.background {
+    background-image: url(../images/campfire.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom left;
+    height: 100vh;
+}
+
+.title {
+    font-size: 5rem;
+    text-align: left;
+    padding: 1rem;
+    padding-top: 6rem;
+}
+
+.text-card {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 80vw;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .title {
+        padding-right: 4rem;
+        align-self: flex-start;
+        width: 600px;
+        font-size: 7rem;
+    }
+    
+    .text-card {
+        width: 600px;
+        padding-right: 4rem;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 1600px) {
+    .title,
+    .text-card {
+        align-self: flex-end;
+    } 
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error 404</title>
+    <meta name="author" content="Johan Torfs">
+    <meta name="description" content="A portfolio of Johan Torfs, an aspiring developer and digital designer">
+    <meta name="keywords" content="portfolio, graphic design, IT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/404.css">
+</head>
+
+<body>
+    <div class="container-fluid background p-0 d-flex">
+        <div class="hamburger" onclick="toggle(this); toggleHeadline();">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div id="headline" class="headline">
+            <nav>
+                <ul class="d-flex flex-nowrap flex-column flex-md-row">
+                    <li><a id="current" href="/index.html">Home</a></li>
+                    <li><a href="/2d-graphics-design.html">2D Graphics Design</a></li>
+                    <li><a href="/3d-graphics-design.html">3D Graphics Design</a></li>
+                    <li><a href="/game-design.html">Game Design</a></li>
+                    <li><a href="/MySiteCSS1/colorscheme.html">Colorscheme</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="d-flex flex-column flex-fill">
+            <h1 class="title">Error 404</h1>
+            <div class="flex-fill d-md-none"></div>
+            <p class="text-card">Seems you took a wrong turn, but at least enjoy the campfire before you go <a href="/index.html">home</a></p>
+        </div>
+    </div>
+
+    <script>
+        var open = 'none'
+
+        function show(id) {
+            if (open == id) {
+                hide(id);
+                open = 'none';
+            } else {
+                document.getElementById(id.concat('-examples')).style.height = 'auto';
+                document.getElementById(id.concat('-examples')).style.transform = 'rotateX(0deg)';
+                document.getElementById(id).style.backgroundColor = 'azure';
+                open = id;
+            }
+        }
+
+        function hide(id) {
+            document.getElementById(id.concat('-examples')).style.height = '0px';
+            document.getElementById(id.concat('-examples')).style.transform = 'rotateX(90deg)';
+            document.getElementById(id).style.backgroundColor = '#ddd';
+        }
+    </script>
+
+    <script>
+        function toggleHeadline() {
+            document.getElementById('headline').classList.toggle("change");
+        }
+    </script>
+
+    <script>
+        function toggle(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+</body></html>
