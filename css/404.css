@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'introscriptr-h2base', 'introheadr-base', sans-serif;
     transition-duration: 0.5s;
     background-color: azure;
 }
@@ -30,18 +30,23 @@ a {
 }
 
 .title {
-    font-size: 5rem;
+    font-size: 4.2rem;
     text-align: left;
     padding: 1rem;
     padding-top: 6rem;
+    
+    font-family: 'introrustg-base2line', 'introscriptr-h2base', 'introheadr-base', sans-serif;
+    text-shadow: 3px 3px 3px black;
 }
 
 .text-card {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     width: 80vw;
     padding: 1rem;
+    
+    text-shadow: 2px 2px 2px black;
 }
 
 @media (min-width: 768px) {
